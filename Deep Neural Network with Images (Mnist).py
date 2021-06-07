@@ -137,7 +137,7 @@ print(cm)
 # +
 import seaborn as sns
 
-pyplot.figure(figsize=(10,6))  
+pyplot.figure(figsize=(10,6))
 sns.heatmap(cm, annot=True)
 
 # +

@@ -247,7 +247,7 @@ print(df_matrix)
 from matplotlib import pyplot
 from numpy import where
 
-pyplot.figure(figsize=(10,6))  
+pyplot.figure(figsize=(10,6))
 sns.heatmap(df_matrix, annot=True)
 
 # +
