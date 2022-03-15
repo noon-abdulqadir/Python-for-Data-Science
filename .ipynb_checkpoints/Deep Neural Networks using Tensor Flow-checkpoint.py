@@ -96,4 +96,4 @@ y = np.ravel(wines.type) # or np.ravel(wines['type'])
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, random_state = 42)
 # -
 
-y_test[0:10]
+y_test[:10]

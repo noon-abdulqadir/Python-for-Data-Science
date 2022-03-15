@@ -112,7 +112,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, rand
 #X_train, X_train_val, y_train, y_train_val = train_test_split(X_train_val, y_train_val, test_size = 0.30, random_state = 42)
 # -
 
-y_test[0:10]
+y_test[:10]
 
 # +
 # Import 'Standardcaler' from 'sklearn.preprocessing'
@@ -224,7 +224,7 @@ tva.boxplot()
 
 y_pred = np.round(model.predict(X_test))
 
-y_pred[0:10]
+y_pred[:10]
 
 # +
 loss,acc = model.evaluate(X_test, y_test, verbose=0)

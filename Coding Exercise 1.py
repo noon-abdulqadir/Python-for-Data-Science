@@ -14,11 +14,8 @@
 # ---
 
 # +
-i = 1
-
-while i<=3:
+for _ in range(1, 4):
     print("This is Spartaaaaa!")
-    i+=1
 
 
 # +

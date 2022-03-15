@@ -121,10 +121,7 @@ y_predict[0]
 np.argmax(y_predict[0])
 
 # +
-y_pred = []
-
-for val in y_predict:
-    y_pred.append(np.argmax(val))
+y_pred = [np.argmax(val) for val in y_predict]
 
 #print(y_pred)
 
