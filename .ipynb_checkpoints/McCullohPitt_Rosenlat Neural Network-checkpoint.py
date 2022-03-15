@@ -39,8 +39,8 @@ print("-"* 60)
 
 for x, _ in training_data:
     result = dot(x, w)
-    
-    print("{}: {} -> {}".format(x[:2],result,step_function(result)))
+
+    print(f"{x[:2]}: {result} -> {step_function(result)}")
 
 # +
 #MC Neuron for Or Gate
@@ -64,11 +64,8 @@ print("-"* 60)
 
 for x, _ in training_data:
     result = dot(x, w)
-    
-    print("{}: {} -> {}".format(x[:2],result,step_function(result)))
 
-# +
- #MC Neuron for NAND Gate
+    print(f"{x[:2]}: {result} -> {step_function(result)}")
 
 w = random.rand(2)
 w[0] = 1
@@ -89,8 +86,8 @@ print("-"* 60)
 
 for x, _ in training_data:
     result = dot(x, w)
-    
-    print("{}: {} -> {}".format(x[:2],result,step_function(result)))
+
+    print(f"{x[:2]}: {result} -> {step_function(result)}")
 # -
 
 """Rosenblat's Perceptron included a way to adjust the weights and find the appropriate combination 
@@ -116,11 +113,11 @@ errors = []
 eta = 0.1     # learning rate
 n = 10000
 
-for i in range(n):
+for _ in range(n):
     x, expected = choice(training_data)
-    
+
     #w = np.append(w,b)
-    
+
     result = dot(w,x)
     error = expected - step_function(result)   # irrespective of what threashold we set, the algorithm
     errors.append(error)
@@ -130,8 +127,8 @@ print("-"* 60)
 
 for x, _ in training_data:
     result = dot(x, w)
-    
-    print("{}: {} -> {}".format(x[:3],result,step_function(result)))
+
+    print(f"{x[:3]}: {result} -> {step_function(result)}")
 # -
 
 
